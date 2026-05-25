@@ -20,9 +20,9 @@ layers:
   - D
   - F
   - G
-  - $$mdi:arrow-left-bold$$
+  - '&Desktop_Change_Left'
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-right-bold$$
+  - '&Desktop_change_right'
   - H
   - J
   - K
