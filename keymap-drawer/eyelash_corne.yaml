@@ -112,7 +112,7 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '=', s: +}
+  - '#'
   - '&'
   - $
   - _
@@ -130,7 +130,7 @@ layers:
   - '~'
   - Sft+@
   - '%'
-  - '#'
+  - {t: '=', s: +}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - $$mdi:volume-off$$
