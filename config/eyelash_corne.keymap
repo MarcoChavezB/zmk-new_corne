@@ -95,10 +95,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp PLUS   &kp EXCLAMATION  &kp ASTERISK  &kp MINUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                &mmv MOVE_UP                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp N0  &trans  &trans
-&kp HASH   &kp AMPERSAND    &kp DOLLAR    &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_4  &kp N5        &kp NUMBER_6   &trans  &trans  &trans
-&kp TILDE  &kp LS(AT_SIGN)  &kp PERCENT   &kp EQUAL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N7        &kp N8        &kp N9         &trans  &trans  &trans
-                                          &trans          &trans                &trans                                                                                &kp ENTER     &mo 1         &kp BACKSPACE
+&kp PLUS   &kp EXCLAMATION  &kp ASTERISK  &kp MINUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                &mmv MOVE_UP                     &rgb_ug RGB_COLOR_HSB(314,0,0)  &kp NUMBER_2  &kp NUMBER_3   &kp N0  &trans  &trans
+&kp HASH   &kp AMPERSAND    &kp DOLLAR    &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_4                    &kp N5        &kp NUMBER_6   &trans  &trans  &trans
+&kp TILDE  &kp LS(AT_SIGN)  &kp PERCENT   &kp EQUAL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N7                          &kp N8        &kp N9         &trans  &trans  &trans
+                                          &trans          &trans                &trans                                                                                &kp ENTER                       &mo 1         &kp BACKSPACE
             >;
 
             sensor-bindings = <&scroll_encoder>;
