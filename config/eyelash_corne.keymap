@@ -1,7 +1,6 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -66,6 +65,20 @@
             bindings = <&kp LA(TAB)>;
             label = "TAB";
         };
+
+        git_commit: git_commit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp A &kp D &kp D &kp SPACE &kp DOT &kp RET &kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp M &kp SPACE &kp SQT>;
+            label = "GIT_COMMIT";
+        };
+
+        git_push: git_push {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp SPACE &kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H>;
+            label = "GIT_PUSH";
+        };
     };
 
     keymap {
@@ -96,13 +109,13 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp PLUS   &kp EXCLAMATION  &kp ASTERISK  &kp MINUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                &mmv MOVE_UP                     &kp PIPE       &kp NUMBER_2  &kp NUMBER_3  &kp N0  &trans  &bl BL_TOG
-&kp HASH   &kp AMPERSAND    &kp DOLLAR    &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp AMPERSAND  &kp N5        &kp NUMBER_6  &trans  &trans  &bl BL_CYCLE
-&kp TILDE  &kp LS(AT_SIGN)  &kp PERCENT   &kp EQUAL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N7         &kp N8        &kp N9        &trans  &trans  &trans
+&kp PLUS   &kp EXCLAMATION  &kp ASTERISK  &kp MINUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                &mmv MOVE_UP                     &kp PIPE       &kp NUMBER_2  &kp NUMBER_3  &kp N0  &git_commit  &git_push
+&kp HASH   &kp AMPERSAND    &kp DOLLAR    &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp AMPERSAND  &kp N5        &kp NUMBER_6  &trans  &trans       &none
+&kp TILDE  &kp LS(AT_SIGN)  &kp PERCENT   &kp EQUAL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N7         &kp N8        &kp N9        &trans  &trans       &trans
                                           &trans          &trans                &trans                                                                                &kp ENTER      &mo 1         &kp LCTRL
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         layer_3 {
