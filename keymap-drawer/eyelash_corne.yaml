@@ -21,7 +21,7 @@ layers:
   - F
   - '2'
   - '&Desktop_Change_Left'
-  - {t: QWERTY, h: '$$mdi:gesture-tap-hold$$', type: held}
+  - {t: QWERTY, h: toggle}
   - '&Desktop_change_right'
   - H
   - J
