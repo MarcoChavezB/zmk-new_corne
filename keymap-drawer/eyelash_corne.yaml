@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - '&Change_window'
+  - $$mdi:arrow-up-bold$$
   - Y
   - U
   - I
@@ -111,7 +111,7 @@ layers:
   - '3'
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&bl BL_TOG'
   - '#'
   - '&'
   - $
@@ -126,7 +126,7 @@ layers:
   - '6'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&bl BL_CYCLE'
   - '~'
   - Sft+@
   - '%'
