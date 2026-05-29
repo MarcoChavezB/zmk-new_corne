@@ -125,7 +125,7 @@ layers:
   - {t: '5', s: '%'}
   - '6'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&php_optimize'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '~'
   - Sft+@
