@@ -120,7 +120,7 @@ layers:
   - '}'
   - RGB BRD
   - RGB TOG
-  - RGB BRI
+  - RGB COLOR HSB(0,100,100)
   - '&'
   - {t: '5', s: '%'}
   - '6'
