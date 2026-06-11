@@ -2,7 +2,6 @@
 
 **This keyboard is not the same as [foostan's Corne](https://github.com/foostan/crkbd). It will not work with standard `corne` firmware.**
 
-![corne mx wireless](https://github.com/user-attachments/assets/77fc2228-e4b9-479c-93fc-f2ccdf96a7bd)
 
 
 
