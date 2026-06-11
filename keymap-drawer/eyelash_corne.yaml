@@ -105,7 +105,7 @@ layers:
   - {t: '-', s: _}
   - (
   - )
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - RGB EFF
   - '|'
   - '2'
   - '3'
@@ -118,9 +118,9 @@ layers:
   - _
   - '{'
   - '}'
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - RGB BRD
+  - RGB TOG
+  - RGB BRI
   - '&'
   - {t: '5', s: '%'}
   - '6'
@@ -134,7 +134,7 @@ layers:
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - $$mdi:volume-off$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - RGB EFR
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
