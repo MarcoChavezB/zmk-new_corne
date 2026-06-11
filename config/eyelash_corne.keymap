@@ -116,10 +116,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp PLUS   &kp EXCLAMATION  &kp ASTERISK  &kp MINUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                 &rgb_ug RGB_EFF                   &kp PIPE       &kp NUMBER_2  &kp NUMBER_3  &kp N0  &git_commit    &git_push
-&kp HASH   &kp AMPERSAND    &kp DOLLAR    &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE                      &rgb_ug RGB_BRD  &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &kp AMPERSAND  &kp N5        &kp NUMBER_6  &trans  &php_optimize  &none
-&kp TILDE  &kp LS(AT_SIGN)  &kp PERCENT   &kp EQUAL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp C_MUTE                     &rgb_ug RGB_EFR                   &kp N7         &kp N8        &kp N9        &trans  &trans         &trans
-                                          &trans          &trans                &trans                                                                                  &kp ENTER      &mo 1         &kp LCTRL
+&kp PLUS   &kp EXCLAMATION  &kp ASTERISK  &kp MINUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                 &rgb_ug RGB_EFF                                    &kp PIPE       &kp NUMBER_2  &kp NUMBER_3  &kp N0  &git_commit    &git_push
+&kp HASH   &kp AMPERSAND    &kp DOLLAR    &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE                      &rgb_ug RGB_BRD  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,100,100)  &kp AMPERSAND  &kp N5        &kp NUMBER_6  &trans  &php_optimize  &none
+&kp TILDE  &kp LS(AT_SIGN)  &kp PERCENT   &kp EQUAL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp C_MUTE                     &rgb_ug RGB_EFR                                    &kp N7         &kp N8        &kp N9        &trans  &trans         &trans
+                                          &trans          &trans                &trans                                                                                                   &kp ENTER      &mo 1         &kp LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
