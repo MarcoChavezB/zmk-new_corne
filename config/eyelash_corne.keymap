@@ -86,6 +86,13 @@
             bindings = <&kp P &kp H &kp P &kp SPACE &kp A &kp R &kp T &kp I &kp S &kp A &kp N &kp SPACE &kp O &kp P &kp T &kp I &kp M &kp I &kp Z &kp E>;
             label = "PHP_OPTIMIZE";
         };
+
+        php_serve: php_serve {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp P &kp C &kp O &kp N &kp F &kp I &kp G &kp RET &kp P &kp H &kp P &kp SPACE &kp A &kp R &kp T &kp I &kp S &kp A &kp N &kp SPACE &kp S &kp E &kp R &kp V &kp E &kp SPACE &kp MINUS &kp MINUS &kp H &kp O &kp S &kp T &kp EQUAL &kp N1 &kp N9 &kp N2 &kp DOT &kp N1 &kp N6 &kp N8 &kp DOT &kp N1 &kp DOT>;
+            label = "PHP_SERVE";
+        };
     };
 
     keymap {
@@ -117,7 +124,7 @@
             display-name = "NUMBER";
             bindings = <
 &kp PLUS   &kp EXCLAMATION  &kp ASTERISK  &kp MINUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                 &rgb_ug RGB_EFF                                    &kp PIPE       &kp NUMBER_2  &kp NUMBER_3  &kp N0  &git_commit    &git_push
-&kp HASH   &kp AMPERSAND    &kp DOLLAR    &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE                      &rgb_ug RGB_BRD  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,100,100)  &kp AMPERSAND  &kp N5        &kp NUMBER_6  &trans  &php_optimize  &none
+&kp HASH   &kp AMPERSAND    &kp DOLLAR    &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE                      &rgb_ug RGB_BRD  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,100,100)  &kp AMPERSAND  &kp N5        &kp NUMBER_6  &trans  &php_optimize  &php_serve
 &kp TILDE  &kp LS(AT_SIGN)  &kp PERCENT   &kp EQUAL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp C_MUTE                     &rgb_ug RGB_EFR                                    &kp N7         &kp N8        &kp N9        &trans  &trans         &trans
                                           &trans          &trans                &trans                                                                                                   &kp ENTER      &mo 1         &kp LCTRL
             >;
